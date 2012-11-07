@@ -277,6 +277,7 @@ public class CropImage extends MonitoredActivity {
         }
 
         if (mBitmap == null) {
+            Toast.makeText(getApplicationContext(), Res.string.not_image, Toast.LENGTH_LONG).show();
             Log.e(TAG, "Cannot load bitmap, exiting.");
             finish();
             return;
